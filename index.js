@@ -1,6 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+// const { ui } = require("inquirer");
+
+var ui = new inquirer.ui.BottomBar();
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -12,7 +15,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // AND use that information to create links for Table of Contents
 // OR for each section, ask whether to include it (Y/N) and, if Y then ask for input
 
-console.log("This will create a README file. All sections will appear in your README. Any answer left blank will have a heading but no content in the README.");
+ui.log.write("This will create a README file. All sections will appear in your README. Any answer left blank will have a heading but no content in the README.");
 
 function promptUser() {
     return inquirer.prompt([
