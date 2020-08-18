@@ -15,6 +15,9 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // AND use that information to create links for Table of Contents
 // OR for each section, ask whether to include it (Y/N) and, if Y then ask for input
 
+// Need to add conditions to be sure inputs are provided and in correct format
+// Add error messages for improper inputs - how to check if something is an email address
+
 ui.log.write("This will create a README file. All sections will appear in your README. Any answer left blank will have a heading but no content in the README.");
 
 function promptUser() {
