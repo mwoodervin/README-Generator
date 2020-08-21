@@ -1,6 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown.js");
+
+
 // const { ui } = require("inquirer");
 
 var ui = new inquirer.ui.BottomBar();
@@ -43,10 +46,10 @@ function promptUser() {
             message: "Enter instructions for using your application."
         },
         {
-            type: "checkbox",
+            type: "list",
             name: "license",
             message: "What license do you want to use for this application?",
-            choices: ["MIT", "Apache 2.0", "GPL v2", "GPF v3", "BSD 3"]
+            choices: ["MIT", "Apache 2.0", "GPL v3", "Mozilla", "BSD 3"]
         },
         {
             type: "input",
@@ -71,10 +74,26 @@ function promptUser() {
 
     ]);
 }
-promptUser();
+// promptUser();
 
 // function to generate README.md file using answers from above
 
+async function init() {
+    try {
+        const data = await promptUser();
+        console.log(data);
+
+        const fileContent = generateMarkdown(data);
+        console.log(fileContent);
+        
+        await writeFileAsync("readme.md", fileContent);
+    }
+    catch(err) {
+        console.log(err);
+    }
+}
+
+init();
 // run promptUser()
 // .then(function(answers) {
 //     const readme = generateReadme(answers);
