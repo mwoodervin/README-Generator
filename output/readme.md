@@ -1,9 +1,9 @@
-# This is Great
+# lskdjf
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## DESCRIPTION
-  Great stuff here
+  ldskjf
 
   ## TABLE OF CONTENTS
 
@@ -14,16 +14,18 @@
   - [License](#license)
 
   ## INSTALLATION
-  install it
+```zsh
+  lksjdf
+```
 
   ## USAGE
-  use it
+  sldkjf
 
   ## CONTRIBUTING
-  add stuff
+  sldkfj
 
   ## CONTACT
-  If you are interested in contacting me about this application, you can find me on github (username) or email me at slkdfjlkj.
+  If you are interested in contacting me about this application, you can find me on [sldfkj](https://github.com/sldfkj) or email me at lsdkjf.
 
   ## LICENSE
   MIT

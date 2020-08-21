@@ -18,7 +18,9 @@ function generateMarkdown(data) {
   - [License](#license)
 
   ## INSTALLATION
+\`\`\`zsh
   ${data.installation}
+\`\`\`
 
   ## USAGE
   ${data.usage}
@@ -27,7 +29,7 @@ function generateMarkdown(data) {
   ${data.contributing}
 
   ## CONTACT
-  If you are interested in contacting me about this application, you can find me on github (${data.github}) or email me at ${data.email}.
+  If you are interested in contacting me about this application, you can find me on [${data.github}](https://github.com/${data.github}) or email me at ${data.email}.
 
   ## LICENSE
   ${data.license}

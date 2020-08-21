@@ -86,7 +86,7 @@ async function init() {
         const fileContent = generateMarkdown(data);
         console.log(fileContent);
         
-        await writeFileAsync("readme.md", fileContent);
+        await writeFileAsync("./output/readme.md", fileContent);
     }
     catch(err) {
         console.log(err);
