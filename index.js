@@ -21,7 +21,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // Need to add conditions to be sure inputs are provided and in correct format
 // Add error messages for improper inputs - how to check if something is an email address
 
-ui.log.write("This will create a README file. All sections will appear in your README. Any answer left blank will have a heading but no content in the README.");
+ui.log.write("This application will create a README file using content generated through a series of prompts. All sections will appear in the file, so any answer left blank will have a heading with no content.");
 
 function promptUser() {
     return inquirer.prompt([
