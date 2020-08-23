@@ -5,6 +5,9 @@
   ## DESCRIPTION
   This application asks for simple user inputs and creates a readme file template that can be added to and adjusted according to the users needs.
 
+  ## LINK TO VIDEO DEMONSTRATION
+  https://drive.google.com/file/d/18wSNz9TdQtZDQChUgQ2o159bpicQ7MHL/view?usp=sharing
+
   ## TABLE OF CONTENTS
 
   - [Installation](#installation)
