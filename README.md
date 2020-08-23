@@ -1,29 +1,31 @@
-# This is Great
+# README Generator
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## DESCRIPTION
-  Great stuff here
+  This application asks for simple user inputs and creates a readme file template that can be added to and adjusted according to the users needs.
 
   ## TABLE OF CONTENTS
 
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contributing)
   - [Contact](#contact)
   - [License](#license)
 
   ## INSTALLATION
-  install it
+  The application is run from the terminal using a simple "node index" entry
 
-  ## USAGE
-  use it
+  ## USER STORY
+  ```
+  WHEN I want to create a standard Readme file for a new project
+  THEN I can open the terminal and type "node index"
+  WHEN I answer the prompts
+  THEN a readme file is created with standard heading, a badge for the license I select and a my contact information
 
-  ## CONTRIBUTING
-  add stuff
+  ```
 
   ## CONTACT
-  If you are interested in contacting me about this application, you can find me on github (username) or email me at slkdfjlkj.
+  If you are interested in contacting me about this application, you can find me on [github](https://github.com/mwoodervin) or email me at mwoodervin@gmail.com.
 
   ## LICENSE
   MIT
