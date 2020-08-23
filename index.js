@@ -10,66 +10,64 @@ var ui = new inquirer.ui.BottomBar();
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// Start with a statement explaining how this will work. All sections are required for a 
-// good README file. Any answer left blank will still create a section heading, but that
-// section will be empty in the README file.
-// write a function that collects information about what sections to include
-// then use that information to populate the promptUser function
-// AND use that information to create links for Table of Contents
-// OR for each section, ask whether to include it (Y/N) and, if Y then ask for input
-
-// Need to add conditions to be sure inputs are provided and in correct format
-// Add error messages for improper inputs - how to check if something is an email address
-
-ui.log.write("This application will create a README file using content generated through a series of prompts. All sections will appear in the file, so any answer left blank will have a heading with no content.");
+ui.log.write("This application will create a README file using content generated through a series of prompts. All sections will appear in the file, so any answer left blank will generate a heading with no content.");
 
 function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
             name: "title",
-            message: "What is the title of this README File?"
+            message: "What is the title of this project?",
+            default: "Readme Template Generator"
         },
         {
             type: "input",
             name: "description",
-            message: "Enter a description of this README file."
+            message: "Enter a description of the application.",
+            default: "This application creates a Readme file template with basic headings and content."
         },
         {
             type: "input",
             name: "installation",
-            message: "Enter instructions for installing your application."
+            message: "Enter instructions for installing your application.",
+            default: "node index.js"
         },
         {
             type: "input",
             name: "usage",
-            message: "Enter instructions for using your application."
+            message: "Enter instructions for using your application.",
+            default: "WHEN I want to create a new Readme file, THEN ..."
         },
         {
             type: "list",
             name: "license",
-            message: "What license do you want to use for this application?",
-            choices: ["MIT", "Apache 2.0", "GPL v3", "Mozilla", "BSD 3"]
+            message: "What licence are you using for this application?",
+            choices: ["MIT", "Apache 2.0", "GPL v3", "Mozilla", "BSD 3"], 
+            default: "MIT"
         },
         {
             type: "input",
             name: "contributing",
-            message: "Enter instructions for contributing to this file."
+            message: "Enter instructions for contributing to this file.",
+            default: "If you are intereted in contributing to this project ..."
         },
         {
             type: "input",
-            name: "contributing",
-            message: "Enter instructions for testing this application."
+            name: "testing",
+            message: "Enter instructions for testing this application.",
+            default: "Test information here"
         },
         {
             type: "input",
             name: "github",
-            message: "What is your github username?"
+            message: "What is your github username?",
+            default: "mwoodervin"
         },
         {
             type: "input",
             name: "email",
-            message: "Enter your email address. (Contact for questions.)"
+            message: "Enter your email address. (Contact for questions.)",
+            default: "mwoodervin@gmail.com"
         },
 
     ]);

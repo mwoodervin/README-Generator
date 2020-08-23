@@ -14,11 +14,12 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contributing](#contributing)
+  - [Testing](#testing)
   - [Contact](#contact)
   - [License](#license)
 
   ## INSTALLATION
-\`\`\`zsh
+\`\`\`bash
   ${data.installation}
 \`\`\`
 
@@ -27,6 +28,9 @@ function generateMarkdown(data) {
 
   ## CONTRIBUTING
   ${data.contributing}
+
+  ## TESTING
+  ${data.testing}
 
   ## CONTACT
   If you are interested in contacting me about this application, you can find me on [${data.github}](https://github.com/${data.github}) or email me at ${data.email}.
