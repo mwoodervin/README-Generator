@@ -16,13 +16,18 @@
   - [License](#license)
 
   ## INSTALLATION
-  The application is run from the terminal using a simple "node index" entry
+  The application is run from the terminal using 
+  ```
+  node index.js
+  ```
 
   ## USER STORY
   ```
-  WHEN I want to create a standard Readme file for a new project
-  THEN I can open the terminal and type "node index"
-  WHEN I answer the prompts
+  AS a developer
+  I WANT and easy way to create a README file for a new project
+  SO THAT all my README files to have a standardized format
+  WHEN I open the terminal and type "node index"
+  THEN I answer the prompts provided
   THEN a readme file is created with standard heading, a badge for the license I select and a my contact information
 
   ```
