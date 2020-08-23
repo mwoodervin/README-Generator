@@ -33,7 +33,7 @@ function generateMarkdown(data) {
   ${data.testing}
 
   ## CONTACT
-  If you are interested in contacting me about this application, you can find me on [${data.github}](https://github.com/${data.github}) or email me at ${data.email}.
+  If you are interested in contacting me about this application, you can find me on [github](https://github.com/${data.github}) or email me at ${data.email}.
 
   ## LICENSE
   ${data.license}

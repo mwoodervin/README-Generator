@@ -18,7 +18,7 @@ function promptUser() {
             type: "input",
             name: "title",
             message: "What is the title of this project?",
-            default: "Readme Template Generator"
+            default: "Readme Generator"
         },
         {
             type: "input",
