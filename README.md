@@ -26,7 +26,8 @@
   AS a developer
   I WANT and easy way to create a README file for a new project
   SO THAT all my README files to have a standardized format
-  WHEN I open the terminal and type "node index"
+  WHEN I open the terminal and type 
+  node index.js
   THEN I answer the prompts provided
   THEN a readme file is created with standard heading, a badge for the license I select and a my contact information
 
