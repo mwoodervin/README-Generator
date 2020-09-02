@@ -1,9 +1,9 @@
-# Readme Generator
+# NOTE TAKER
 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## DESCRIPTION
-  This application creates a template readme file
+  This application allows busy individuals to capture titled notes and save or delete them throughout the day.
 
   ## TABLE OF CONTENTS
 
@@ -16,7 +16,7 @@
 
   ## INSTALLATION
 ```bash
-  node index.js
+  node server.js
 ```
 
   ## USAGE
@@ -32,5 +32,5 @@
   If you are interested in contacting me about this application, you can find me on [github](https://github.com/mwoodervin) or email me at mwoodervin@gmail.com.
 
   ## LICENSE
-  GPL v3
+  MIT
 

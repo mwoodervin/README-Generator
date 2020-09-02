@@ -18,13 +18,11 @@ function promptUser() {
             type: "input",
             name: "title",
             message: "What is the title of this project?",
-            default: "Readme Generator"
         },
         {
             type: "input",
             name: "description",
             message: "Enter a description of the application.",
-            default: "This application creates a Readme file template with basic headings and content."
         },
         {
             type: "input",
@@ -36,7 +34,6 @@ function promptUser() {
             type: "input",
             name: "usage",
             message: "Enter instructions for using your application.",
-            default: "WHEN I want to create a new Readme file, THEN ..."
         },
         {
             type: "list",
@@ -49,13 +46,11 @@ function promptUser() {
             type: "input",
             name: "contributing",
             message: "Enter instructions for contributing to this file.",
-            default: "If you are intereted in contributing to this project ..."
         },
         {
             type: "input",
             name: "testing",
             message: "Enter instructions for testing this application.",
-            default: "Test information here"
         },
         {
             type: "input",
